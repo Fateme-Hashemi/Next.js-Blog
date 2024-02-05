@@ -5,10 +5,16 @@ import {getFeaturedPosts} from '../lib/utils.js';
 
 
 function HomePage(props) {
-return <>
-<Hero />
-<FeaturedPosts posts={props.posts} />
-</>
+return(
+   <>
+   <Head>
+      <title>Elahe's Next Blog</title>
+      <meta name="description" content="next.js blog about programming" />
+   </Head>
+   <Hero />
+   <FeaturedPosts posts={props.posts} />
+   </>
+)
 }
 
 export function getStaticProps() {
