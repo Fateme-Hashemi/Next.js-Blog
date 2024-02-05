@@ -1,3 +1,4 @@
+import Head from "next/head.js";
 import FeaturedPosts from "./components/home-page/featured-posts.js";
 import Hero from "./components/home-page/hero";
 import {getFeaturedPosts} from '../lib/utils.js';
